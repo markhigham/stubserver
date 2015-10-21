@@ -1,5 +1,7 @@
 # stubserver
-in process http stub server
+in process http stub server for use as an tell/ask stub service for stubbing external apis.
+
+_doesn't currently work_
 
 Based on things like this:
 
