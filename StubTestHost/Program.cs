@@ -5,6 +5,7 @@ using System.Linq.Expressions;
 using System.Net.Http;
 using System.Text;
 using System.Threading.Tasks;
+using HttpStubServer;
 
 namespace StubTestHost
 {
@@ -13,7 +14,7 @@ namespace StubTestHost
         static void Main(string[] args)
         {
             var baseUrl = "http://localhost:9000";
-            var stub = new HttpStubServer.HttpStub(baseUrl);
+            var stub = new HttpStub(baseUrl);
 
             stub.Start();
 

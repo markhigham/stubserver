@@ -72,6 +72,8 @@
     <Compile Include="Controllers\ErrorController.cs" />
     <Compile Include="Controllers\ValuesController.cs" />
     <Compile Include="HttpStub.cs" />
+    <Compile Include="ILogger.cs" />
+    <Compile Include="NullLogger.cs" />
     <Compile Include="Startup.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
