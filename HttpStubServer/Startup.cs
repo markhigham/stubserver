@@ -12,16 +12,16 @@ namespace HttpStubServer
         {
             // Configure Web API for self-host. 
             HttpConfiguration config = new HttpConfiguration();
-            //config.Routes.MapHttpRoute(
-            //    name: "DefaultApi",
-            //    routeTemplate: "api/{controller}/{id}",
-            //    defaults: new { id = RouteParameter.Optional }
-            //);
+            config.Routes.MapHttpRoute(
+                name: "DefaultApi",
+                routeTemplate: "api/{controller}/{id}",
+                defaults: new { id = RouteParameter.Optional }
+            );
 
             //config.Routes.MapHttpRoute(
             //    name: "Error404",
             //    routeTemplate: "{*url}",
-            //    defaults: new { controller = "CatchAll", action = "DefaultAction" }
+            //    defaults: new { controller = "CatchAll", action = "ErrorAction" }
             //);
 
             config.Services.Replace(typeof(IHttpControllerSelector), new CatchAllControllerSelector(config));
